@@ -112,6 +112,7 @@ IT WAS MIRANDA
 99716	1143	SQL Symphony Concert	20171229
 
 
+Congrats, you found the brains behind the murder! Everyone in SQL City hails you as the greatest SQL detective of all time. Time to break out the champagne!
 
 
 
