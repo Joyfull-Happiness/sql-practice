@@ -63,6 +63,12 @@ WHERE id = '48Z7A' OR id = '48Z55';
 --48Z55	67318	Jeremy Bowers	20160101	gold
 --48Z7A	28819	Joe Germuska	20160305	gold
 
+Part 8: Check the solution for both ppl! 
+INSERT INTO solution VALUES (1, 'Jeremy Bowers');
+SELECT value FROM solution; 
+
+Congrats, you found the murderer! But wait, there's more... If you think you're up for a challenge, try querying the interview transcript of the murderer to find the real villain behind this crime. If you feel especially confident in your SQL skills, try to complete this final step with no more than 2 queries. Use this same INSERT statement with your new suspect to check your answer.
+
 
 
 
