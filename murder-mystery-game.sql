@@ -30,4 +30,9 @@ SELECT * FROM interview
 WHERE person_id = '16371';
 --info found:I saw the murder happen, and I recognized the killer from my gym when I was working out last 
 --week on January the 9th.
-              
+
+Part 4:
+  maybe we can look who else was there while annable was working out based off her member id 
+SELECT * FROM get_fit_now_member WHERE name LIKE '%Annabel%';
+
+---INFO found: id: 90081 and person_id 16371
