@@ -11,7 +11,18 @@ Select transcript FROM interview
 -- below showed all transcript starting with chapter 4
 SELECT transcript FROM interview ORDER BY person_id; 
 
-----FINALLY FIGURED IT OUT:
-SELECT date, type, description, city FROM crime_scene_report WHERE type='murder'AND city = 'SQL City'; 
+----FINALLY FIGURED out the report for SQL city:
+SELECT date, type, description, city 
+FROM crime_scene_report 
+WHERE date = '20180115' AND type='murder'AND city = 'SQL City'; 
 
 
+--in "Northwestern Dr" and 2 witness 
+-- name Annable  "Franklin Ave" 
+SELECT * FROM person
+WHERE name LIKE '%Annabel%' AND address_street_name = 'Franklin Ave';
+
+-- info found: 16371 Annabel Miller liscnece 490173, 318771143 address_street_name = 'Franklin Ave'
+
+
+              
