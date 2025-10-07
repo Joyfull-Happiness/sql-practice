@@ -67,7 +67,51 @@ Part 8: Check the solution for both ppl!
 INSERT INTO solution VALUES (1, 'Jeremy Bowers');
 SELECT value FROM solution; 
 
-Congrats, you found the murderer! But wait, there's more... If you think you're up for a challenge, try querying the interview transcript of the murderer to find the real villain behind this crime. If you feel especially confident in your SQL skills, try to complete this final step with no more than 2 queries. Use this same INSERT statement with your new suspect to check your answer.
+--Congrats, you found the murderer! But wait, there's more... 
+--If you think you're up for a challenge, try querying the interview transcript of 
+--the murderer to find the real villain behind this crime. 
+
+Bonus:
+  SELECT * FROM interview
+WHERE person_id = '67318'; 
+
+--I was hired by a woman with a lot of money. 
+--  I don't know her name but I know she's around 5'5" (65") or 5'7" (67"). 
+---  She has red hair and she drives a Tesla Model S. 
+ -- I know that she attended the SQL Symphony Concert 3 times in December 2017.
+
+
+
+--Looking at drivers_liscence: 
+And this is code: SELECT *
+FROM drivers_license
+WHERE hair_color = 'red'
+  AND height BETWEEN 65 AND 67
+  AND car_make = 'Tesla'
+  AND car_model = 'Model S';
+
+--look for matching liscnce id with person id:
+SELECT * FROM person 
+  WHERE license_id = '202298' 
+  OR license_id = '291182' 
+  OR license_id = '918773';
+
+--info found:
+  Id = 78881 Red Korb 
+  Id = 90700 Regina George
+  Id = 99716 Miranda Priestly
+  
+---facebook_event_checkin
+SELECT * FROM facebook_event_checkin
+WHERE event_name LIKE '%Symphony%' AND person_id = '99716';
+
+--info FOUND:
+IT WAS MIRANDA 
+99716	1143	SQL Symphony Concert	20171206
+99716	1143	SQL Symphony Concert	20171212
+99716	1143	SQL Symphony Concert	20171229
+
+
 
 
 
