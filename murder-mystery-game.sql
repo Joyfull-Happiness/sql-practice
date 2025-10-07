@@ -16,7 +16,7 @@ SELECT date, type, description, city
 FROM crime_scene_report 
 WHERE date = '20180115' AND type='murder'AND city = 'SQL City'; 
 
-
+Part 2: 
 --in "Northwestern Dr" and 2 witness 
 -- name Annable  "Franklin Ave" 
 SELECT * FROM person
@@ -24,5 +24,10 @@ WHERE name LIKE '%Annabel%' AND address_street_name = 'Franklin Ave';
 
 -- info found: 16371 Annabel Miller liscnece 490173, 318771143 address_street_name = 'Franklin Ave'
 
-
+Part 3:
+-- info found: 16371 Annabel Miller liscnece 490173, 318771143 address_street_name = 'Franklin Ave'
+SELECT * FROM interview
+WHERE person_id = '16371';
+--info found:I saw the murder happen, and I recognized the killer from my gym when I was working out last 
+--week on January the 9th.
               
