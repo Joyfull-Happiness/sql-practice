@@ -105,17 +105,6 @@ SELECT * FROM person
 SELECT * FROM facebook_event_checkin
 WHERE event_name LIKE '%Symphony%' AND person_id = '99716';
 
---info FOUND:
-IT WAS MIRANDA 
-99716	1143	SQL Symphony Concert	20171206
-99716	1143	SQL Symphony Concert	20171212
-99716	1143	SQL Symphony Concert	20171229
-
-
-Congrats, you found the brains behind the murder! Everyone in SQL City hails you as the greatest SQL detective of all time. Time to break out the champagne!
-
-
-
 
 
 
