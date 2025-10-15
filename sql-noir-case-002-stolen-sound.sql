@@ -35,3 +35,6 @@ suspect_id	transcript
 
 ANS :
 97	Rico Delgado	red	gold watch
+case solved:
+ase Explanation
+You began by querying the 'crime_scene' table with the date (19830715) and location (West Hollywood Records) to find the incident report. Then, you retrieved the two witness records from the 'witnesses' table, which revealed that: • The suspect wore a red bandana. • The suspect had a distinctive gold watch. Next, you queried the 'suspects' table, and there were 3 suspects matching the clues. Finally, you found the confession from Rico Delgado in the 'interviews' table.
