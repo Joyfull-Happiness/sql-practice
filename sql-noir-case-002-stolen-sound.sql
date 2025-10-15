@@ -27,3 +27,11 @@ id	name	bandana_color	accessory
   
 4.
 Retrieve the suspect's interview transcript to confirm the confession.
+suspect_id	transcript
+35	I wasn't anywhere near West Hollywood Records that night.
+44	I was busy with my music career; I have nothing to do with this theft.
+97	I couldn't help it. I snapped and took the record.
+
+
+ANS :
+97	Rico Delgado	red	gold watch
