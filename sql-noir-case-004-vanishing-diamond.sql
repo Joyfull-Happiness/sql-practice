@@ -4,8 +4,7 @@
   -- 3. Your final conclusion: who did it?
 
 
-On October 31, 1987, at a Coconut Grove mansion masked ball, Leonard Pierce was found dead in the garden. 
-  Can you piece together all the clues to expose the true murderer?
+--At Miami’s prestigious Fontainebleau Hotel charity gala, the famous “Heart of Atlantis” diamond necklace suddenly disappeared from its display.
 
 
 --1)
@@ -14,18 +13,23 @@ FROM crime_scene
 WHERE date LIKE '%19871031%' AND location LIKE '%coconut%';
 
 
---(id) 75	19871031	Miami Mansion, Coconut Grove	During a masked ball, a body was found in the garden.
---Witnesses mentioned a hotel booking and suspicious phone activity.
+--id	date	location	description
+--48	19870520	Fontainebleau Hotel	The Heart of Atlantis necklace disappeared. 
+--Many guests were questioned but only two of them gave valuable clues. 
+--One of them is a really famous actor. The other one is a woman who works as a consultant for a big company and her first name ends with "an".
+
+
+-- famous actor 
+
+--qoman works consultant for a big company and her first name ends with "an"
 
 
 --2)
 SELECT * 
 FROM witness_statements
-WHERE crime_scene_id ='75';
+WHERE id ='48';
 
-id	crime_scene_id	witness_id	clue
-83	75	37	I overheard a booking at The Grand Regency.
-89	75	42	I noticed someone at the front desk discussing Room 707 for a reservation made yesterday.
+--48	78	From the parking lot, I saw someone copying down the security patrol schedule
 
   2
   
