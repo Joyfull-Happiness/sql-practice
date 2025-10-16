@@ -15,7 +15,8 @@ WHERE location LIKE '%Fontainebleau Hotel%';
 
 --id	date	location	description
 --48	19870520	Fontainebleau Hotel	The Heart of Atlantis necklace disappeared. 
---Many guests were questioned but only two of them gave valuable clues. 
+--Many guests were questioned but only two of them gave valuable clues.
+
 --One of them is a really famous actor. 
 --The other one is a woman who works as a consultant for a big company and her first name ends with "an".
 
@@ -46,9 +47,27 @@ id                                  guest_id
 
 
   --4) 
+SELECT * 
+FROM witness_statements
+WHERE guest_id =129 OR guest_id=116;
 
+id	guest_id	clue
+16	116	I saw someone holding an invitation ending with "-R". He was wearing a navy suit and a white tie.
+50	129	I overheard someone say, "Meet me at the marina, dock 3.
 
+  
   --5)
+SELECT * 
+FROM guest INNER JOIN attire_registry
+ON guest.id = attire_registry.id
+WHERE note LIKE '%navy%' AND NOTE like '%suit%'AND NOTE like '%WHITE TIE%' AND invitation_code LIKE '%R%';
+
+
+  --INFO
+  --id	name	occupation	invitation_code	id	guest_id	note
+58	Silas Butler	Luxury Car Dealer	VIP-R	58	190	navy suit, white tie
+61	Delilah Marshall	Fashion Photographer	VIP-R	61	189	navy suit, white tie
+67	Thea Gibson	Art Collector	VIP-R	67	190	navy suit, white 
 
 
   --6) 
