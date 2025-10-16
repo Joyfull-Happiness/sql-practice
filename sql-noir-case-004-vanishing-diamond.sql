@@ -56,21 +56,8 @@ id	guest_id	clue
 50	129	I overheard someone say, "Meet me at the marina, dock 3.
 
   
-  --5)
-SELECT * 
-FROM guest INNER JOIN attire_registry
-ON guest.id = attire_registry.id
-WHERE note LIKE '%navy%' AND NOTE like '%suit%'AND NOTE like '%WHITE TIE%' AND invitation_code LIKE '%R%';
 
 
-  --INFO
-  --id	name	occupation	invitation_code	id	guest_id	note
-58	Silas Butler	Luxury Car Dealer	VIP-R	58	190	navy suit, white tie
-61	Delilah Marshall	Fashion Photographer	VIP-R	61	189	navy suit, white tie
-67	Thea Gibson	Art Collector	VIP-R	67	190	navy suit, white 
-
-
-  --6) 
 
 
 
