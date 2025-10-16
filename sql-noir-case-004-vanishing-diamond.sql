@@ -10,7 +10,7 @@
 --1)
 SELECT * 
 FROM crime_scene
-WHERE date LIKE '%19871031%' AND location LIKE '%coconut%';
+WHERE location LIKE '%Fontainebleau Hotel%';
 
 
 --id	date	location	description
@@ -35,7 +35,10 @@ WHERE id ='48';
   
 
 --3) 
-
+SELECT *
+FROM guest INNER JOIN final_interviews
+ON guest.id = final_interviews.id
+WHERE occupation LIKE '%actor%' OR occupation LIKE '%consultant%';
 
 
   --4) 
