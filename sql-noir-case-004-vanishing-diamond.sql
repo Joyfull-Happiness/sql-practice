@@ -61,6 +61,10 @@ SELECT *
 FROM guest INNER JOIN attire_registry
 ON guest.id = attire_registry.guest_id
 WHERE note LIKE '%navy%' AND NOTE like '%suit%'AND NOTE like '%WHITE TIE%' AND invitation_code LIKE '%R%';
+
+
+  id	name	occupation	invitation_code	id	guest_id	note
+105	Mike Manning	Wealth Reallocation Expert	VIP-R	48	105	navy suit, white tie
   
 
 
